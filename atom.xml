@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.yian.party/"/>
-  <updated>2017-05-25T13:48:32.000Z</updated>
+  <updated>2017-05-27T07:30:35.998Z</updated>
   <id>http://www.yian.party/</id>
   
   <author>
@@ -14,6 +14,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>QA</title>
+    <link href="http://www.yian.party/2017/05/27/%E5%BB%BA%E7%AB%8B%E7%AB%99%E7%82%B9%E5%8F%82%E8%80%83%E7%BD%91%E5%9D%80/"/>
+    <id>http://www.yian.party/2017/05/27/建立站点参考网址/</id>
+    <published>2017-05-27T03:28:49.102Z</published>
+    <updated>2017-05-27T07:30:35.998Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="目前参考的网址有"><a href="#目前参考的网址有" class="headerlink" title="目前参考的网址有"></a>目前参考的网址有</h3><p><a href="https://zhuanlan.zhihu.com/p/26625249" target="_blank" rel="external">https://zhuanlan.zhihu.com/p/26625249</a><br><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013758392816224cafd33c44b4451887cc941e6716805c000" target="_blank" rel="external">http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013758392816224cafd33c44b4451887cc941e6716805c000</a><br><a href="http://blog.csdn.net/w13770269691/article/details/38704941" target="_blank" rel="external">http://blog.csdn.net/w13770269691/article/details/38704941</a><br><a href="https://github.com/tangkunyin/hexo-theme-jsimple/blob/master/README.zhCN.md" target="_blank" rel="external">https://github.com/tangkunyin/hexo-theme-jsimple/blob/master/README.zhCN.md</a><br><a href="http://blog.csdn.net/w13770269691/article/details/38704941" target="_blank" rel="external">http://blog.csdn.net/w13770269691/article/details/38704941</a></p>
+<h3 id="操作速记"><a href="#操作速记" class="headerlink" title="操作速记"></a>操作速记</h3><p>上传<br>git init<br>git add .<br>git remote add origin <a href="https://github.com/yianweb/websource.git" target="_blank" rel="external">https://github.com/yianweb/websource.git</a><br>git commit -m “first commit”<br>git push -u origin master</p>
+<p>删除<br>git status<br>git rm README.md<br>git commit -m “remove README.md”</p>
+<p>安装控件<br>npm install hexo-tag-bootstrap –save</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      瞎扯。
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
@@ -39,6 +62,47 @@
     
     </summary>
     
+    
+  </entry>
+  
+  <entry>
+    <title>在hexo博客中打造相对完美的URL</title>
+    <link href="http://www.yian.party/2017/01/07/build-perfect-url-in-hexo/"/>
+    <id>http://www.yian.party/2017/01/07/build-perfect-url-in-hexo/</id>
+    <published>2017-01-07T14:54:05.000Z</published>
+    <updated>2017-05-27T07:41:21.276Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/img/2017/hexo-blog-basic.jpg" alt="hexo-blog-basic"></p>
+<h2 id="这里讨论一个处女座的情怀问题"><a href="#这里讨论一个处女座的情怀问题" class="headerlink" title="这里讨论一个处女座的情怀问题"></a>这里讨论一个处女座的情怀问题</h2><p>如果你是全部用英文写作，那么这篇文章对你确实没什么Luan用。对hexo而言，我们可以很轻松的自定义文章URL。</p>
+<p>对数字敏感，你可以在站点的<code>_config.yml</code>文件中<code>permalink</code>处配置成<code>:year/:month/:day/:title/</code>。是的，这个不需要改动，保持hexo默认就是</p>
+<blockquote>
+<p>结果是：<a href="http://localhost:4000/2017/04/18/demo" target="_blank" rel="external">http://localhost:4000/2017/04/18/demo</a></p>
+</blockquote>
+<p>有静态网页情结的你，认为<code>.html</code>结尾利于<code>SEO</code>，则可以把<code>permalink</code>配置成<code>:category/:title.html</code>或<code>:category/:timestamp.html</code></p>
+<blockquote>
+<p>结果是：<a href="http://localhost:4000/demo/1492523268.html" target="_blank" rel="external">http://localhost:4000/demo/1492523268.html</a></p>
+</blockquote>
+<p>注意第二种使用分类别名，请一定要设置两个地方：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">// 1、站点的_config.yml中找到以下部分</div><div class="line"># Category &amp; Tag</div><div class="line">default_category: uncategorized</div><div class="line">category_map:</div><div class="line">    演示: demo</div><div class="line">tag_map:</div><div class="line"></div><div class="line">// 2、scaffolds/post.md文件中改成如下</div><div class="line">---                                                                                                                               </div><div class="line">title: &#123;&#123; title &#125;&#125;             </div><div class="line">date: &#123;&#123; date &#125;&#125;</div><div class="line">tags:                          </div><div class="line">timestamp: &#123;&#123; date &#125;&#125;          </div><div class="line">categories: 演示</div><div class="line">---</div></pre></td></tr></table></figure>
+<p>是的，增加了两行，在写文章时，通过<code>hexo n demo</code>后，生成的<code>demo.md</code>文件里如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">---                                                                                                                               </div><div class="line">title: hello</div><div class="line">categories: 演示</div><div class="line">date: 2017-04-18 22:19:45</div><div class="line">timestamp: 1447295415</div><div class="line">tags:</div><div class="line">---</div></pre></td></tr></table></figure>
+<p>此时需要手动的把<code>timestamp</code>手动改成时间戳，因为这是你自定义的变量，当前<code>hexo</code>还没有这个系统变量使用，所以只能手动配置。</p>
+<p>通过以上方式体现的URL更有意义，但是用<code>title</code>或<code>timestamp</code>面临两个问题，前者遇到中文就呵呵了，后者虽精炼但无疑义。所以还有改进的空间，即使用<code>permalink: :category/:title.html</code>这样配置时，创建文章用英文标题。这样解决了中文一坨乱码且意义很明显，读者一看就知道这是哪个分类下的什么文章！</p>
+<p>是不是很美好，赶紧试试去吧~</p>
+]]></content>
+    
+    <summary type="html">
+    
+      动态网站的URL可以通过服务器的伪静态规则设置，想怎么搞就怎么搞。可类似hexo这样的静态生成器要想有一个实用好看的URL却不是一件容易的事情，尤其是还带中文的情况。本文将讨论下如何在hexo中打造相对完美的URL
+    
+    </summary>
+    
+      <category term="技术" scheme="http://www.yian.party/categories/tech/"/>
+    
+    
+      <category term="hexo" scheme="http://www.yian.party/tags/hexo/"/>
+    
+      <category term="网站" scheme="http://www.yian.party/tags/%E7%BD%91%E7%AB%99/"/>
     
   </entry>
   

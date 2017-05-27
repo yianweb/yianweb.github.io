@@ -48,11 +48,11 @@
 <link rel="shortcut icon" href="/images/favicon.png">
 
 
-<title>归档集- 2017/5 - YALF</title>
+<title>在hexo博客中打造相对完美的url - YALF</title>
 
 <meta name="keywords" content="undefined">
 
-<meta name="description " content="别高估了自己的毅力，别低估了自己的能力">
+<meta name="description " content="动态网站的URL可以通过服务器的伪静态规则设置，想怎么搞就怎么搞。可类似hexo这样的静态生成器要想有一个实用好看的URL却不是一件容易的事情，尤其是还带中文的情况。本文将讨论下如何在hexo中打造相对完美的URL">
 </head>
 <body>
 <div id="nav">
@@ -103,8 +103,26 @@
 </div>
             <div class="page-title">
     <ul>
-        <li><a href="/" data-name="首页" title="Back Home">首页</a></li>
-        <li><a href="/tags" data-name="标签云" title="标签云">标签</a></li>
+        <li><a href="/">最新</a></li>
+        
+            
+                <li class="active">
+                    <a href="/categories/tech" data-name="技术">技术</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/life" data-name="实践">实践</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/like" data-name="爱好">爱好</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/resource" data-name="资源">资源</a>
+                </li>
+            
+        
         <li class="page-search">
     <form id="search" class="search-form">
         <label for="s" class="sr-only">请输入关键字</label>
@@ -146,55 +164,78 @@
 <div class="main-inner">
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
         <div class="post-header">
-            <h3 class="post-title">坦率的讲 - 本站目前共计3篇文章</h3>
-        </div>
-        <p><img src="/images/category-bg.jpg" alt="category-bg"></p>
-        <div class="post-content markdown-body" itemprop="articleBody">
-            <div class="archives">
-                
-                
-                
-                
-                
-                <div class="archives-item">
-                    <h2>2017年05月</h2>
-                    <ul class="archives_list">
-                        
-                        <li>27日11:28:49
-                            <a href="/2017/05/27/建立站点参考网址/">QA</a>
-                        </li>
-                        
-                
-                
-                
-                        <li>27日11:28:49
-                            <a href="/2017/05/27/hello-world/">Hello World</a>
-                        </li>
-                        
-                    </ul>
-                </div>
-                
-                
-                
-                
-                
-                <div class="archives-item">
-                    <h2>2017年01月</h2>
-                    <ul class="archives_list">
-                        
-                        <li>07日22:54:05
-                            <a href="/2017/01/07/build-perfect-url-in-hexo/">在hexo博客中打造相对完美的URL</a>
-                        </li>
-                        
-                    </ul>
-                </div>
-                
-                
+            <div class="post-author clearfix">
+                <a class="avatar fleft" href="https://www.tangkunyin.com" target="_blank">
+                    <img width="48" src="/images/favicon.png" alt="avatar"/>
+                </a>
+                <p><span class="label">作者</span>
+                    <a href="https://about.tangkunyin.com" target="_blank">唐先森</a>
+                    <span title="最后编辑于2017-01-07">2017-01-07</span>
+                </p>
+                <p>一个写代码的「伪文人」</p>
+            </div>
+            <h2 class="post-title">在hexo博客中打造相对完美的URL</h2>
+            <div class="post-meta">
+                本文总共1351个字 | 您是第<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>位看到它们的小伙伴
             </div>
         </div>
-    </article>
-</div>
+        <div class="post-content markdown-body">
+            <p><img src="/img/2017/hexo-blog-basic.jpg" alt="hexo-blog-basic"></p>
+<h2 id="这里讨论一个处女座的情怀问题"><a href="#这里讨论一个处女座的情怀问题" class="headerlink" title="这里讨论一个处女座的情怀问题"></a>这里讨论一个处女座的情怀问题</h2><p>如果你是全部用英文写作，那么这篇文章对你确实没什么Luan用。对hexo而言，我们可以很轻松的自定义文章URL。</p>
+<p>对数字敏感，你可以在站点的<code>_config.yml</code>文件中<code>permalink</code>处配置成<code>:year/:month/:day/:title/</code>。是的，这个不需要改动，保持hexo默认就是</p>
+<blockquote>
+<p>结果是：<a href="http://localhost:4000/2017/04/18/demo" target="_blank" rel="external">http://localhost:4000/2017/04/18/demo</a></p>
+</blockquote>
+<p>有静态网页情结的你，认为<code>.html</code>结尾利于<code>SEO</code>，则可以把<code>permalink</code>配置成<code>:category/:title.html</code>或<code>:category/:timestamp.html</code></p>
+<blockquote>
+<p>结果是：<a href="http://localhost:4000/demo/1492523268.html" target="_blank" rel="external">http://localhost:4000/demo/1492523268.html</a></p>
+</blockquote>
+<p>注意第二种使用分类别名，请一定要设置两个地方：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">// 1、站点的_config.yml中找到以下部分</div><div class="line"># Category &amp; Tag</div><div class="line">default_category: uncategorized</div><div class="line">category_map:</div><div class="line">    演示: demo</div><div class="line">tag_map:</div><div class="line"></div><div class="line">// 2、scaffolds/post.md文件中改成如下</div><div class="line">---                                                                                                                               </div><div class="line">title: &#123;&#123; title &#125;&#125;             </div><div class="line">date: &#123;&#123; date &#125;&#125;</div><div class="line">tags:                          </div><div class="line">timestamp: &#123;&#123; date &#125;&#125;          </div><div class="line">categories: 演示</div><div class="line">---</div></pre></td></tr></table></figure>
+<p>是的，增加了两行，在写文章时，通过<code>hexo n demo</code>后，生成的<code>demo.md</code>文件里如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">---                                                                                                                               </div><div class="line">title: hello</div><div class="line">categories: 演示</div><div class="line">date: 2017-04-18 22:19:45</div><div class="line">timestamp: 1447295415</div><div class="line">tags:</div><div class="line">---</div></pre></td></tr></table></figure>
+<p>此时需要手动的把<code>timestamp</code>手动改成时间戳，因为这是你自定义的变量，当前<code>hexo</code>还没有这个系统变量使用，所以只能手动配置。</p>
+<p>通过以上方式体现的URL更有意义，但是用<code>title</code>或<code>timestamp</code>面临两个问题，前者遇到中文就呵呵了，后者虽精炼但无疑义。所以还有改进的空间，即使用<code>permalink: :category/:title.html</code>这样配置时，创建文章用英文标题。这样解决了中文一坨乱码且意义很明显，读者一看就知道这是哪个分类下的什么文章！</p>
+<p>是不是很美好，赶紧试试去吧~</p>
 
+        </div>
+        <div class="post-tool">
+            <a class="btn-weixin-mp" href="javascript:void(0);" data-cid="52" title="95">
+                <i class="fa fa-mobile" aria-hidden="true"></i> 打包
+            </a>
+        </div>
+        
+        <div class="post-tags">标签：
+            
+            <a href="/tags/hexo/">hexo</a>
+            
+            <a href="/tags/网站/">网站</a>
+            
+        </div>
+        
+    </article>
+    
+<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+     var disqus_config = function () {
+     this.page.url = 'http://www.yian.party/2017/01/07/build-perfect-url-in-hexo/';
+     this.page.identifier = '2017/01/07/build-perfect-url-in-hexo/';
+     };
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, disqus_shortname = 'yian.party',s = d.createElement('script');
+        s.src = 'https://'+disqus_shortname+'.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
         </div><!-- end #main-->
     </div><!-- end #body -->
     <footer class="footer">

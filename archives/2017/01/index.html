@@ -48,24 +48,24 @@
 <link rel="shortcut icon" href="/images/favicon.png">
 
 
-<title>qa - YALF</title>
+<title>归档集- 2017/1 - YALF</title>
 
-<meta name="keywords" content="help，qa，帮助中心，站内帮助">
+<meta name="keywords" content="undefined">
 
-<meta name="description " content="瞎扯。">
+<meta name="description " content="别高估了自己的毅力，别低估了自己的能力">
 </head>
 <body>
 <div id="nav">
     <nav class="nav-menu">
         <a class="site-name current" href="/" title="LF">LF</a>
-        <a class="site-index current" href="/"><i class="fa fa-home"></i><span>Home</span></a>
-        <a href="/archives" title="Archives"><i class="fa fa-archives"></i><span>Archives</span></a>
+        <a class="site-index current" href="/"><i class="fa fa-home"></i><span>首页</span></a>
+        <a href="/archives" title="归档"><i class="fa fa-archives"></i><span>归档</span></a>
 		<!--
-        <a href="/tags" title="Tags"><i class="fa fa-tags"></i><span>Tags</span></a>
-        <a href="/video" title="Video"><i class="fa fa-video-camera"></i><span>Video</span></a>
+        <a href="/tags" title="标签"><i class="fa fa-tags"></i><span>标签</span></a>
+        <a href="/video" title="视频资源"><i class="fa fa-video-camera"></i><span>视频资源</span></a>
         <a href="/rss" title="RSS Feed"><i class="fa fa-rss"></i><span>RSS Feed</span></a>
 		-->
-        <a href="/help" title="Help"><i class="fa fa-question-circle"></i><span>Help</span></a>
+        <a href="/help" title="帮助中心"><i class="fa fa-question-circle"></i><span>帮助中心</span></a>
     </nav>
 </div>
 <div class="nav-user">
@@ -103,18 +103,19 @@
 </div>
             <div class="page-title">
     <ul>
-        <li><a href="/">最近文章</a></li>
+        <li><a href="/" data-name="首页" title="Back Home">首页</a></li>
+        <li><a href="/tags" data-name="标签云" title="标签云">标签</a></li>
         <li class="page-search">
     <form id="search" class="search-form">
-        <label for="s" class="sr-only">Input Search key Words Here</label>
-        <input class="search-field" type="text" name="s" class="text" placeholder="Input Search key Words Here" />
-        <button type="submit" class="search-form-submit" title="Search"><i class="fa fa-search"></i></button>
+        <label for="s" class="sr-only">请输入关键字</label>
+        <input class="search-field" type="text" name="s" class="text" placeholder="请输入关键字" />
+        <button type="submit" class="search-form-submit" title="搜索"><i class="fa fa-search"></i></button>
     </form>
     <div class="ins-search">
     <div class="ins-search-mask"></div>
     <div class="ins-search-container">
         <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="Type something..."/>
+            <input type="text" class="ins-search-input" placeholder="请输入关键词..."/>
             <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="ins-section-wrapper">
@@ -126,11 +127,11 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Posts',
-            PAGES: 'Pages',
-            CATEGORIES: 'Categories',
-            TAGS: 'Tags',
-            UNTITLED: '(Untitled)',
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(无标题)',
         },
         ROOT_URL: '/',
         CONTENT_URL: '/content.json',
@@ -145,66 +146,63 @@
 <div class="main-inner">
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
         <div class="post-header">
-            <div class="post-author clearfix">
-                <a class="avatar fleft" href="https://www.yian.party" target="_blank">
-                    <img width="48" src="/images/favicon.png" alt="avatar"/>
-                </a>
-                <p><span class="label">作者</span>
-                    <a href="https://www.yian.party" target="_blank">yian</a>
-                    <span title="最后编辑于2017-05-27">2017-05-27</span>
-                </p>
-                <p>一个闲逛的人</p>
+            <h3 class="post-title">坦率的讲 - 本站目前共计3篇文章</h3>
+        </div>
+        <p><img src="/images/category-bg.jpg" alt="category-bg"></p>
+        <div class="post-content markdown-body" itemprop="articleBody">
+            <div class="archives">
+                
+                
+                
+                
+                
+                <div class="archives-item">
+                    <h2>2017年05月</h2>
+                    <ul class="archives_list">
+                        
+                        <li>27日11:28:49
+                            <a href="/2017/05/27/建立站点参考网址/">QA</a>
+                        </li>
+                        
+                
+                
+                
+                        <li>27日11:28:49
+                            <a href="/2017/05/27/hello-world/">Hello World</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                
+                
+                
+                
+                <div class="archives-item">
+                    <h2>2017年01月</h2>
+                    <ul class="archives_list">
+                        
+                        <li>07日22:54:05
+                            <a href="/2017/01/07/build-perfect-url-in-hexo/">在hexo博客中打造相对完美的URL</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                
             </div>
-            <h2 class="post-title">QA</h2>
-            <div class="post-meta">
-                本文总共641个字 | 您是第<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>位看到它们的小伙伴
-            </div>
         </div>
-        <div class="post-content markdown-body">
-            <h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="目前参考的网址有"><a href="#目前参考的网址有" class="headerlink" title="目前参考的网址有"></a>目前参考的网址有</h3><p><a href="https://zhuanlan.zhihu.com/p/26625249" target="_blank" rel="external">https://zhuanlan.zhihu.com/p/26625249</a><br><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013758392816224cafd33c44b4451887cc941e6716805c000" target="_blank" rel="external">http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013758392816224cafd33c44b4451887cc941e6716805c000</a><br><a href="http://blog.csdn.net/w13770269691/article/details/38704941" target="_blank" rel="external">http://blog.csdn.net/w13770269691/article/details/38704941</a><br><a href="https://github.com/tangkunyin/hexo-theme-jsimple/blob/master/README.zhCN.md" target="_blank" rel="external">https://github.com/tangkunyin/hexo-theme-jsimple/blob/master/README.zhCN.md</a><br><a href="http://blog.csdn.net/w13770269691/article/details/38704941" target="_blank" rel="external">http://blog.csdn.net/w13770269691/article/details/38704941</a></p>
-<h3 id="操作速记"><a href="#操作速记" class="headerlink" title="操作速记"></a>操作速记</h3><p>上传<br>git init<br>git add .<br>git remote add origin <a href="https://github.com/yianweb/websource.git" target="_blank" rel="external">https://github.com/yianweb/websource.git</a><br>git commit -m “first commit”<br>git push -u origin master</p>
-<p>删除<br>git status<br>git rm README.md<br>git commit -m “remove README.md”</p>
-<p>安装控件<br>npm install hexo-tag-bootstrap –save</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-
-        </div>
-        <div class="post-tool">
-            <a class="btn-weixin-mp" href="javascript:void(0);" data-cid="52" title="95">
-                <i class="fa fa-mobile" aria-hidden="true"></i> 打包
-            </a>
-        </div>
-        
     </article>
-    
-<div id="disqus_thread"></div>
-<script>
-    /**
-     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-     */
-     var disqus_config = function () {
-     this.page.url = 'http://www.yian.party/categories/tech/建立站点参考网址.html';
-     this.page.identifier = 'categories/tech/建立站点参考网址.html';
-     };
-    (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, disqus_shortname = 'yian.party',s = d.createElement('script');
-        s.src = 'https://'+disqus_shortname+'.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
 </div>
-<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
         </div><!-- end #main-->
     </div><!-- end #body -->
     <footer class="footer">
     <div class="footer-inner">
         <p>
-            <a href="/about"  title="About">About</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
-            <a href="/help" title="Help" >Help</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
-            <a href="/video" title="Video">Video</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/about"  title="关于本站">关于本站</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/help" title="帮助中心" >帮助中心</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/video" title="视频资源">视频资源</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
             <!-- 自定义链接 -->
             <a href="/links" title="友情链接">友情链接</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
             <a href="/app" title="App下载">App下载</a>
