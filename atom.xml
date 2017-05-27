@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.yian.party/"/>
-  <updated>2017-05-25T13:48:32.000Z</updated>
+  <updated>2017-05-27T07:06:41.696Z</updated>
   <id>http://www.yian.party/</id>
   
   <author>
@@ -14,6 +14,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>QA</title>
+    <link href="http://www.yian.party/2017/05/27/categories/tech/index/"/>
+    <id>http://www.yian.party/2017/05/27/categories/tech/index/</id>
+    <published>2017-05-27T07:25:35.125Z</published>
+    <updated>2017-05-27T07:06:41.696Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="关于本地方"><a href="#关于本地方" class="headerlink" title="关于本地方"></a>关于本地方</h2><h3 id="Q-直接说网站模板哪来的？"><a href="#Q-直接说网站模板哪来的？" class="headerlink" title="Q: 直接说网站模板哪来的？"></a>Q: 直接说网站模板哪来的？</h3><blockquote>
+<p>A: 本站是静态博客，通过<code>hexo</code>生成，主题是网上拿来的，非常感谢这位大拿，本站底部有它们的链接</p>
+</blockquote>
+<h3 id="Q-建这个网站有啥用？"><a href="#Q-建这个网站有啥用？" class="headerlink" title="Q: 建这个网站有啥用？"></a>Q: 建这个网站有啥用？</h3><blockquote>
+<p>A: 啥用都没有，自己吐槽的地方，反正看到这页的人基本没有</p>
+</blockquote>
+<h3 id="Q-这个网站能存在多久？"><a href="#Q-这个网站能存在多久？" class="headerlink" title="Q: 这个网站能存在多久？"></a>Q: 这个网站能存在多久？</h3><blockquote>
+<p>A: 域名暂时只买一年，github等着被挂</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      瞎扯。
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>

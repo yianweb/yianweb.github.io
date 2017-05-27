@@ -3,6 +3,23 @@
   
     
     <entry>
+      <title><![CDATA[QA]]></title>
+      <url>/2017/05/27/categories/tech/index/</url>
+      <content type="html"><![CDATA[<h2 id="关于本地方"><a href="#关于本地方" class="headerlink" title="关于本地方"></a>关于本地方</h2><h3 id="Q-直接说网站模板哪来的？"><a href="#Q-直接说网站模板哪来的？" class="headerlink" title="Q: 直接说网站模板哪来的？"></a>Q: 直接说网站模板哪来的？</h3><blockquote>
+<p>A: 本站是静态博客，通过<code>hexo</code>生成，主题是网上拿来的，非常感谢这位大拿，本站底部有它们的链接</p>
+</blockquote>
+<h3 id="Q-建这个网站有啥用？"><a href="#Q-建这个网站有啥用？" class="headerlink" title="Q: 建这个网站有啥用？"></a>Q: 建这个网站有啥用？</h3><blockquote>
+<p>A: 啥用都没有，自己吐槽的地方，反正看到这页的人基本没有</p>
+</blockquote>
+<h3 id="Q-这个网站能存在多久？"><a href="#Q-这个网站能存在多久？" class="headerlink" title="Q: 这个网站能存在多久？"></a>Q: 这个网站能存在多久？</h3><blockquote>
+<p>A: 域名暂时只买一年，github等着被挂</p>
+</blockquote>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Hello World]]></title>
       <url>/2017/05/27/hello-world/</url>
       <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
