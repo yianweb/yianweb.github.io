@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>静思</title>
-  <subtitle>一个汇总、反思的地方</subtitle>
+  <title>YALF</title>
+  <subtitle>毅力，能力</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.yian.party/"/>
